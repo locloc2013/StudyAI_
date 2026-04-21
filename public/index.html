@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StudyAI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h2>Đăng nhập StudyAI</h2>
+  <input id="user" placeholder="Tên tài khoản">
+  <input id="pass" type="password" placeholder="Mật khẩu">
+  <button onclick="login()">Đăng nhập</button>
+  <button onclick="register()">Đăng ký</button>
+</div>
+
+<div id="chatApp" style="display:none;">
+  <h3 id="welcome"></h3>
+
+  <div id="chatBox"></div>
+
+  <input id="msg" placeholder="Nhập tin nhắn..." onkeypress="enterSend(event)">
+  <button onclick="send()">📤</button>
+  <button onclick="startMic()">🎤</button>
+
+  <br><br>
+  <button onclick="loadHistory()">📜 Lịch sử</button>
+  <button onclick="clearHistory()">🗑 Xóa</button>
+
+  <p class="note">StudyAI có thể mắc sai sót. Hãy kiểm chứng thông tin 😊</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
